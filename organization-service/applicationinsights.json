@@ -1,0 +1,6 @@
+{
+    "connectionString": "InstrumentationKey=dd2190bb-408b-470a-a0e2-00e26abe9d75;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/",
+    "role": {
+        "name": "organization-service"
+      }
+}

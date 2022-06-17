@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-service
+spec:
+  selector:
+    matchLabels:
+      app: employee-service
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: employee-service
+    spec:
+      containers:
+      - name: employee-service
+        image: testdanielaaa.azurecr.io/spring/employee-service:v2
+        ports:
+        - containerPort: 80
+
+
+
+
+
+

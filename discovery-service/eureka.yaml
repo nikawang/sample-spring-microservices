@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discovery-service
+spec:
+  selector:
+    matchLabels:
+      app: discovery-service
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: discovery-service
+    spec:
+      containers:
+      - name: discovery-service
+        image: testdanielaaa.azurecr.io/spring/eureka:v8
+        ports:
+        - containerPort: 8761
+
+
+
+
+
+

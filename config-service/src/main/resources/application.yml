@@ -1,0 +1,9 @@
+server:
+  port: 8061
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      servernative:
+        search-locations: classpath:/config
