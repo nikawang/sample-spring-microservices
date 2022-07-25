@@ -4,6 +4,22 @@
         "name": "employee-service"
       },
       "preview": {
+        "captureHttpServerHeaders": {
+          "requestHeaders": [
+            "content-type"
+          ],
+          "responseHeaders": [
+            "content-type"
+          ]
+        },
+        "captureHttpClientHeaders": {
+          "requestHeaders": [
+            "content-type"
+          ],
+          "responseHeaders": [
+            "content-type"
+          ]
+        },
         "captureLoggingLevelAsCustomDimension": true
       },
       "instrumentation": {

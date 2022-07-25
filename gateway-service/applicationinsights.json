@@ -4,7 +4,23 @@
         "name": "gateway-service"
       },
       "preview": {
-        "captureLoggingLevelAsCustomDimension": true
+        "captureLoggingLevelAsCustomDimension": true,
+        "captureHttpServerHeaders": {
+          "requestHeaders": [
+            "content-type"
+          ],
+          "responseHeaders": [
+            "content-type"
+          ]
+        },
+        "captureHttpClientHeaders": {
+          "requestHeaders": [
+            "content-type"
+          ],
+          "responseHeaders": [
+            "content-type"
+          ]
+        }
       },
       "instrumentation": {
         "azureSdk": {
