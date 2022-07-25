@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: department-service
-        image: testdanielaaa.azurecr.io/spring/department-service:v3
+        image: testdanielaaa.azurecr.io/spring/department-service:10
         ports:
         - containerPort: 80
 

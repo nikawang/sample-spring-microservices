@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: employee-service
-        image: testdanielaaa.azurecr.io/spring/employee-service:v2
+        image: testdanielaaa.azurecr.io/spring/employee-service:v10
         ports:
         - containerPort: 80
 

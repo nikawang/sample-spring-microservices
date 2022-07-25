@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: organization-service
-        image: testdanielaaa.azurecr.io/spring/organization-service:v2
+        image: testdanielaaa.azurecr.io/spring/organization-service:v10
         ports:
         - containerPort: 80
 

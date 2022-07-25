@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gateway-service
-        image: testdanielaaa.azurecr.io/spring/gateway-service:v2
+        image: testdanielaaa.azurecr.io/spring/gateway-service:v10
         ports:
         - containerPort: 80
 

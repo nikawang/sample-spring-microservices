@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: config
-        image: testdanielaaa.azurecr.io/spring/config:v8
+        image: testdanielaaa.azurecr.io/spring/config-service:v10
         ports:
         - containerPort: 8061
