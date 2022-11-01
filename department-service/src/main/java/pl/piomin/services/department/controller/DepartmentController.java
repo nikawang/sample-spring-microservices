@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.piomin.services.department.client.EmployeeClient;
 import pl.piomin.services.department.model.Department;
 import pl.piomin.services.department.repository.DepartmentRepository;
-
+import java.lang.IllegalArgumentException;
 import java.util.List;
 
 @RestController
@@ -23,8 +23,13 @@ public class DepartmentController {
 	}
 
 	@PostMapping("/")
-	public Department add(@RequestBody Department department) {
+	public Department add(@RequestBody Department department) throws IllegalArgumentException {
 		LOGGER.info("Department add: {}", department);
+		if(department.getName().equals("testEx"))
+		{
+			throw new IllegalArgumentException("Wrong Name");
+		}
+		
 		return repository.add(department);
 	}
 	

@@ -1,60 +1,61 @@
 {
-    "connectionString": "InstrumentationKey=dd2190bb-408b-470a-a0e2-00e26abe9d75;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/",
-    "role": {
-        "name": "organization-service"
-      },
-      "preview": {
-        "captureHttpServerHeaders": {
-          "requestHeaders": [
-            "content-type"
-          ],
-          "responseHeaders": [
-            "content-type"
-          ]
-        },
-        "captureHttpClientHeaders": {
-          "requestHeaders": [
-            "content-type"
-          ],
-          "responseHeaders": [
-            "content-type"
-          ]
-        },
-        "captureLoggingLevelAsCustomDimension": true
-      },
-      "instrumentation": {
-        "azureSdk": {
-          "enabled": false
-        },
-        "cassandra": {
-          "enabled": false
-        },
-        "jdbc": {
-          "enabled": false
-        },
-        "jms": {
-          "enabled": false
-        },
-        "kafka": {
-          "enabled": false
-        },
-        "micrometer": {
-          "enabled": false
-        },
-        "mongo": {
-          "enabled": false
-        },
-        "rabbitmq": {
-          "enabled": false
-        },
-        "redis": {
-          "enabled": false
-        },
-        "springScheduling": {
-          "enabled": false
-        },
-        "springIntegration": {
-          "enabled": true
-        }
-      }
+  "connectionString": "InstrumentationKey=ed9baecd-d00e-46fd-a584-baefb918ca65;IngestionEndpoint=https://japaneast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://japaneast.livediagnostics.monitor.azure.com/",
+  "role": {
+      "name": "organization-service"
+    },
+  "preview": {
+    "captureHttpServerHeaders": {
+      "requestHeaders": [
+        "content-type"
+      ],
+      "responseHeaders": [
+        "content-type"
+      ]
+    },
+    "captureHttpClientHeaders": {
+      "requestHeaders": [
+        "content-type"
+      ],
+      "responseHeaders": [
+        "content-type"
+      ]
+    },
+    "captureLoggingLevelAsCustomDimension": true
+  },
+  "instrumentation": {
+    "azureSdk": {
+      "enabled": true
+    },
+    "cassandra": {
+      "enabled": false
+    },
+    "jdbc": {
+      "enabled": false
+    },
+    "jms": {
+      "enabled": false
+    },
+    "kafka": {
+      "enabled": false
+    },
+    "micrometer": {
+      "enabled": false
+    },
+    "mongo": {
+      "enabled": false
+    },
+    "rabbitmq": {
+      "enabled": false
+    },
+    "redis": {
+      "enabled": true
+    },
+    "springScheduling": {
+      "enabled": true
+    },
+    "springIntegration": {
+      "enabled": true
+    }
+  }
+
 }

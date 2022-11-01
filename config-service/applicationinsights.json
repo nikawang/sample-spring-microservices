@@ -1,5 +1,5 @@
 {
-    "connectionString": "InstrumentationKey=dd2190bb-408b-470a-a0e2-00e26abe9d75;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/",
+    "connectionString": "InstrumentationKey=ed9baecd-d00e-46fd-a584-baefb918ca65;IngestionEndpoint=https://japaneast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://japaneast.livediagnostics.monitor.azure.com/",
     "role": {
         "name": "config-server"
       },
@@ -24,7 +24,7 @@
     },
     "instrumentation": {
       "azureSdk": {
-        "enabled": false
+        "enabled": true
       },
       "cassandra": {
         "enabled": false
@@ -48,10 +48,10 @@
         "enabled": false
       },
       "redis": {
-        "enabled": false
+        "enabled": true
       },
       "springScheduling": {
-        "enabled": false
+        "enabled": true
       },
       "springIntegration": {
         "enabled": true

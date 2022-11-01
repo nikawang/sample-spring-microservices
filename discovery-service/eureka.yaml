@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: discovery-service
-        image: testdanielaaa.azurecr.io/spring/discovery-service:v10
+        image: nikawang.azurecr.io/spring/discovery-service:v11
         ports:
         - containerPort: 8761
 
