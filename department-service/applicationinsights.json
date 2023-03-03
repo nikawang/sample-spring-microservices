@@ -1,7 +1,7 @@
 {
-  "connectionString": "InstrumentationKey=ed9baecd-d00e-46fd-a584-baefb918ca65;IngestionEndpoint=https://japaneast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://japaneast.livediagnostics.monitor.azure.com/",
+  "connectionString": "CONNECTION_STRING",
   "role": {
-      "name": "department-service"
+      "name": "ROLE_NAME"
     },
   "preview": {
     "captureHttpServerHeaders": {
