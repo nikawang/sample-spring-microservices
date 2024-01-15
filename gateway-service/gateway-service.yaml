@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gateway-service
-        image: nikawang.azurecr.io/spring/gateway-service:v11
+        image: nikawang.azurecr.io/spring/gateway-service:v13
         ports:
         - containerPort: 80
 

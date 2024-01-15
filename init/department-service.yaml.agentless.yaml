@@ -14,7 +14,7 @@ spec:
     spec:
       initContainers:
        - name: copy
-         image: nikawang.azurecr.io/spring/app-insights-agent:v1
+         image: nikawang.azurecr.io/spring/app-insights-agent:v2
          command: ["/bin/sh", "-c", "source /app/init-appinsights.sh; cp /app/* /config/"]
          env:
          - name: CONNECTION_STRING
@@ -26,13 +26,13 @@ spec:
            mountPath: /config/
       containers:
       - name: department-service
-        image: nikawang.azurecr.io/spring/department-service:v11-noagent
+        image: nikawang.azurecr.io/spring/department-service:v12
         ports:
         - containerPort: 80
         volumeMounts:
         - name: appinsights-config
           mountPath: /config/
-        command: ["/bin/sh", "-c", "cp /config/* /app/ ; java -javaagent:applicationinsights-agent-3.3.1.jar -jar app.jar"]
+        command: ["/bin/sh", "-c", "cp /config/* /app/ ; java -javaagent:applicationinsights-agent.jar -jar department-service-1.2-SNAPSHOT.jar"]
       volumes: 
       - name: appinsights-config
         emptyDir: {}

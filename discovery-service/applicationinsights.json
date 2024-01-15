@@ -1,5 +1,5 @@
 {
-  "connectionString": "InstrumentationKey=64236993-7fd5-41ca-92f5-d76f560c988f;IngestionEndpoint=https://germanywestcentral-1.in.applicationinsights.azure.com/;LiveEndpoint=https://germanywestcentral.livediagnostics.monitor.azure.com/",
+  "connectionString": "InstrumentationKey=ed9baecd-d00e-46fd-a584-baefb918ca65;IngestionEndpoint=https://japaneast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://japaneast.livediagnostics.monitor.azure.com/",
   "role": {
       "name": "discovery-service"
     },

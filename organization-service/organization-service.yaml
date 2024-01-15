@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: organization-service
-        image: nikawang.azurecr.io/spring/organization-service:v11
+        image: nikawang.azurecr.io/spring/organization-service:v13
         ports:
         - containerPort: 80
 
